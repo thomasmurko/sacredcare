@@ -12,7 +12,7 @@ const Header = () => {
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
             <span className="font-serif text-2xl md:text-3xl font-medium text-heading tracking-tight">
-              Tender Ground
+              Sacred Care
             </span>
           </a>
 

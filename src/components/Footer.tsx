@@ -6,7 +6,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <span className="font-serif text-2xl font-medium tracking-tight">
-              Tender Ground
+              Sacred Care
             </span>
             <p className="mt-4 text-primary-foreground/70 max-w-md leading-relaxed">
               Compassionate gravesite care for families who want peace of mind 
@@ -39,7 +39,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © 2026 Tender Ground. All rights reserved.
+            © 2026 Sacred Care. All rights reserved.
           </p>
           <p className="text-primary-foreground/50 text-sm">
             Made with care in Australia
