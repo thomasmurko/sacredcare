@@ -34,9 +34,11 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="lg">
-              Request a Visit
-            </Button>
+            <a href="#contact">
+              <Button variant="hero" size="lg">
+                Request a Visit
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -65,9 +67,11 @@ const Header = () => {
               <a href="#contact" className="text-body hover:text-heading transition-colors py-2">
                 Contact
               </a>
-              <Button variant="hero" className="mt-4">
-                Request a Visit
-              </Button>
+              <a href="#contact">
+                <Button variant="hero" className="mt-4">
+                  Request a Visit
+                </Button>
+              </a>
             </div>
           </nav>
         )}

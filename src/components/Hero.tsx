@@ -31,9 +31,11 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up-delay-3">
-            <Button variant="hero" size="xl">
-              Request a Visit
-            </Button>
+            <a href="#contact">
+              <Button variant="hero" size="xl">
+                Request a Visit
+              </Button>
+            </a>
             <Button variant="heroOutline" size="xl">
               Learn More
             </Button>
