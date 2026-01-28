@@ -20,9 +20,9 @@ const Footer = () => {
             <h4 className="font-medium mb-4">Services</h4>
             <ul className="space-y-2 text-primary-foreground/70">
               <li><a href="#services" className="hover:text-primary-foreground transition-colors">Gravestone Cleaning</a></li>
-              <li><a href="#services" className="hover:text-primary-foreground transition-colors">Light Restoration</a></li>
               <li><a href="#services" className="hover:text-primary-foreground transition-colors">Fresh Flowers</a></li>
               <li><a href="#services" className="hover:text-primary-foreground transition-colors">Plot Maintenance</a></li>
+              <li><a href="#services" className="hover:text-primary-foreground transition-colors">Photo Updates</a></li>
             </ul>
           </div>
 

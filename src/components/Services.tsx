@@ -1,15 +1,10 @@
-import { Droplets, Flower2, Sparkles, Camera, Heart, Calendar } from "lucide-react";
+import { Droplets, Flower2, Camera, Heart, Calendar } from "lucide-react";
 
 const services = [
   {
     icon: Droplets,
     title: "Gravestone Cleaning",
     description: "Gentle, professional cleaning that restores dignity and clarity to headstones without causing damage to delicate stonework.",
-  },
-  {
-    icon: Sparkles,
-    title: "Light Restoration",
-    description: "Careful restoration of lettering, minor repairs, and treatment to protect against weathering and environmental wear.",
   },
   {
     icon: Flower2,
