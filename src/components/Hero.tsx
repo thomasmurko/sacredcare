@@ -36,9 +36,11 @@ const Hero = () => {
                 Request a Visit
               </Button>
             </a>
-            <Button variant="heroOutline" size="xl">
-              Learn More
-            </Button>
+            <a href="#services">
+              <Button variant="heroOutline" size="xl">
+                Learn More
+              </Button>
+            </a>
           </div>
 
           {/* Trust indicators */}
