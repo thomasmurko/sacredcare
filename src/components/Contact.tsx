@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="bg-card rounded-xl p-8 shadow-card border border-border/50">
-              <form className="space-y-6">
+              <form action="https://formspree.io/f/xrejnold" method="POST" className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-heading mb-2">
                     Your Name
@@ -30,6 +30,8 @@ const Contact = () => {
                   <input
                     type="text"
                     id="name"
+                    name="name"
+                    required
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-heading placeholder:text-subtle focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                     placeholder="Enter your name"
                   />
@@ -42,6 +44,8 @@ const Contact = () => {
                   <input
                     type="email"
                     id="email"
+                    name="email"
+                    required
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-heading placeholder:text-subtle focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                     placeholder="your@email.com"
                   />
@@ -54,6 +58,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="location"
+                    name="location"
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-heading placeholder:text-subtle focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                     placeholder="City or cemetery name"
                   />
@@ -65,13 +70,15 @@ const Contact = () => {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
+                    required
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-heading placeholder:text-subtle focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none"
                     placeholder="Share any details about the care you're looking for..."
                   />
                 </div>
 
-                <Button variant="hero" size="lg" className="w-full">
+                <Button type="submit" variant="hero" size="lg" className="w-full">
                   Send Message
                 </Button>
               </form>
