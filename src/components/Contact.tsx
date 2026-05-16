@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -91,16 +91,6 @@ const Contact = () => {
               </div>
 
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-heading">Email Us</p>
-                    <p className="text-body">hello@sacredcare.com.au</p>
-                  </div>
-                </div>
-
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-5 h-5 text-primary" />
