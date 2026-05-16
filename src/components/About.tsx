@@ -6,7 +6,7 @@ const About = () => {
           {/* Content */}
           <div>
             <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
-              Why Tender Ground
+              Why Sacred Care
             </p>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium mb-8">
               Because distance shouldn't diminish devotion
@@ -19,7 +19,7 @@ const About = () => {
                 places where they rest.
               </p>
               <p>
-                Tender Ground was founded on a simple belief: that everyone deserves 
+                Sacred Care was founded on a simple belief: that everyone deserves 
                 to know their loved one's resting place is being cared for with 
                 genuine respect and attention, regardless of distance.
               </p>

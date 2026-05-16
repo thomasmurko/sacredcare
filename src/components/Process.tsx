@@ -1,27 +1,27 @@
 const steps = [
   {
     number: "01",
-    title: "Share the details",
+    title: "You book online",
     description:
-      "Tell us about your loved one's resting place — the cemetery, location, and any specific care instructions or preferences you have.",
+      "Tell us the cemetery, loved one's name, and what you'd like done. Takes under 3 minutes.",
   },
   {
     number: "02",
-    title: "We visit and assess",
+    title: "We visit and care",
     description:
-      "Our team visits the site, assesses the current condition, and creates a care plan tailored to the specific needs of the gravesite.",
+      "Our team cleans the headstone, tidies the plot, and places flowers if requested.",
   },
   {
     number: "03",
     title: "Careful attention",
     description:
-      "We perform the agreed services with respect and precision — cleaning, maintenance, flower placement, or whatever is needed.",
+      "We perform the agreed services with respect and precision.",
   },
   {
     number: "04",
     title: "Photo confirmation",
     description:
-      "After each visit, we send you photographs and a brief update, so you can see everything is exactly as it should be.",
+      "After each visit, we send before and after photos directly to you.",
   },
 ];
 
