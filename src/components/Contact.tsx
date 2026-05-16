@@ -97,7 +97,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-heading">Service Areas</p>
-                    <p className="text-body">Australia-wide coverage</p>
+                    <p className="text-body">Greater Sydney, Australia wide soon!</p>
                   </div>
                 </div>
               </div>
