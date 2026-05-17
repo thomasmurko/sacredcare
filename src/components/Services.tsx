@@ -42,7 +42,7 @@ const Services = () => {
           </h2>
           <p className="text-body text-lg">
             Every service is performed with respect, attention to detail, and 
-            the understanding that these are more than just tasks — they're 
+            the understanding that these are more than just tasks. They're 
             acts of love.
           </p>
         </div>
