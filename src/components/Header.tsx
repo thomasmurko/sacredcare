@@ -15,7 +15,7 @@ const Header = () => {
             <img
               src={sacredHeartLogo}
               alt="Sacred Care"
-              className="h-8 md:h-10 w-auto"
+              className="h-10 w-auto object-contain mix-blend-multiply"
             />
             <span className="font-serif text-2xl md:text-3xl font-medium text-heading tracking-tight">
               Sacred Care
