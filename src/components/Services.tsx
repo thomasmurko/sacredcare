@@ -24,7 +24,7 @@ const services = [
   {
     icon: Calendar,
     title: "Scheduled Care Plans",
-    description: "Flexible care plans — one-time visits, seasonal maintenance, or year-round stewardship tailored to your needs.",
+    description: "Flexible care plans: one-time visits, seasonal maintenance, or year-round stewardship tailored to your needs.",
   },
 ];
 
@@ -42,7 +42,7 @@ const Services = () => {
           </h2>
           <p className="text-body text-lg">
             Every service is performed with respect, attention to detail, and 
-            the understanding that these are more than just tasks — they're 
+            the understanding that these are more than just tasks. They're 
             acts of love.
           </p>
         </div>
