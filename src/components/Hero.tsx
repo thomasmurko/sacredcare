@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10 pt-20">
         <div className="max-w-2xl">
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4 animate-fade-up">
-            Gravesite Care Services
+            Burial Care Service
           </p>
           
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium leading-tight mb-6 animate-fade-up-delay-1">
@@ -43,19 +43,6 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Trust indicators */}
-          <div className="mt-12 pt-8 border-t border-border/50 animate-fade-up-delay-3">
-            <div className="flex flex-wrap gap-8 text-subtle text-sm">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-primary/60" />
-                <span>Photo documentation</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-primary/60" />
-                <span>Flexible scheduling</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
