@@ -19,6 +19,7 @@ type FormState = {
   email: string;
   phone: string;
   notes: string;
+  privacyAccepted: boolean;
 };
 
 const emptySite: BurialSite = {
@@ -38,6 +39,7 @@ const initialState: FormState = {
   email: "",
   phone: "",
   notes: "",
+  privacyAccepted: false,
 };
 
 const MAX_SITES = 5; // 1 initial + up to 4 additional
@@ -73,6 +75,7 @@ const GetStarted = () => {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submittedCount, setSubmittedCount] = useState(0);
+  const [privacyError, setPrivacyError] = useState(false);
 
   const update = <K extends keyof FormState>(key: K, value: FormState[K]) =>
     setForm((f) => ({ ...f, [key]: value }));
@@ -118,6 +121,11 @@ const GetStarted = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!canSubmit) return;
+    if (!form.privacyAccepted) {
+      setPrivacyError(true);
+      return;
+    }
+    setPrivacyError(false);
     setSubmitting(true);
 
     const extras = [
