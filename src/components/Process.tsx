@@ -15,7 +15,7 @@ const steps = [
     number: "03",
     title: "Photo confirmation",
     description:
-      "We send photos following the completion of the service.",
+      "Once the visit is complete, we email you photos, so even from a distance, you can see exactly how your loved one's resting place has been cared for.",
   },
 ];
 
