@@ -9,7 +9,7 @@ const steps = [
     number: "02",
     title: "We visit and care",
     description:
-      "Our team cleans the headstone, tidies the plot, and places flowers if requested.",
+      "Our team visits the plot and carries out the requested care services.",
   },
   {
     number: "03",
