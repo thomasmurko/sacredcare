@@ -161,10 +161,11 @@ const GetStarted = () => {
                 <Check className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-serif text-2xl md:text-3xl font-medium mb-4">
-                Thank you
+                Your care plan request has been received
               </h3>
               <p className="text-body text-lg">
-                We'll be in touch shortly to confirm your care plan.
+                {form.firstName ? `Thank you, ${form.firstName}. ` : "Thank you. "}
+                We'll be in touch soon to confirm the details of your care plan.
               </p>
             </div>
           ) : (
