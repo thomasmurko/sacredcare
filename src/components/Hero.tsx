@@ -27,7 +27,7 @@ const Hero = () => {
           
           <p className="text-lg md:text-xl text-body leading-relaxed mb-8 max-w-xl animate-fade-up-delay-2">
             When you can't be there in person, we tend to the resting place of 
-            those you love — with the same care you would give yourself.
+            those you love, with the same care you would give yourself.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up-delay-3">
