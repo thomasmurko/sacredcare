@@ -15,7 +15,7 @@ const About = () => {
             <div className="space-y-6 text-body text-lg">
               <p>
                 Life takes us places. We move for work, for family, for opportunity. 
-                But our hearts often remain tethered to those we've lost — and to the 
+                But our hearts often remain tethered to those we've lost, and to the 
                 places where they rest.
               </p>
               <p>
