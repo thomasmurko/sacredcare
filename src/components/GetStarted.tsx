@@ -19,6 +19,7 @@ type FormState = {
   email: string;
   phone: string;
   notes: string;
+  privacyAccepted: boolean;
 };
 
 const emptySite: BurialSite = {
@@ -38,6 +39,7 @@ const initialState: FormState = {
   email: "",
   phone: "",
   notes: "",
+  privacyAccepted: false,
 };
 
 const MAX_SITES = 5; // 1 initial + up to 4 additional
@@ -73,6 +75,7 @@ const GetStarted = () => {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submittedCount, setSubmittedCount] = useState(0);
+  const [privacyError, setPrivacyError] = useState(false);
 
   const update = <K extends keyof FormState>(key: K, value: FormState[K]) =>
     setForm((f) => ({ ...f, [key]: value }));
@@ -118,6 +121,11 @@ const GetStarted = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!canSubmit) return;
+    if (!form.privacyAccepted) {
+      setPrivacyError(true);
+      return;
+    }
+    setPrivacyError(false);
     setSubmitting(true);
 
     const extras = [
@@ -455,6 +463,38 @@ const GetStarted = () => {
                           onChange={(e) => update("notes", e.target.value)}
                         />
                       </div>
+                    </div>
+                  )}
+
+                  {step === 4 && (
+                    <div>
+                      <label className="flex items-start gap-3 cursor-pointer group">
+                        <input
+                          type="checkbox"
+                          checked={form.privacyAccepted}
+                          onChange={(e) => {
+                            update("privacyAccepted", e.target.checked);
+                            if (e.target.checked) setPrivacyError(false);
+                          }}
+                          className="mt-1 w-4 h-4 rounded border-border text-primary focus:ring-2 focus:ring-primary/20 cursor-pointer accent-primary"
+                        />
+                        <span className="text-sm text-body leading-relaxed">
+                          I have read and agree to the Sacred Care{" "}
+                          <a
+                            href="/privacy-policy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline font-medium"
+                          >
+                            Privacy Policy
+                          </a>
+                        </span>
+                      </label>
+                      {privacyError && (
+                        <p className="mt-2 text-sm text-destructive">
+                          Please confirm you have read our Privacy Policy before submitting
+                        </p>
+                      )}
                     </div>
                   )}
 
