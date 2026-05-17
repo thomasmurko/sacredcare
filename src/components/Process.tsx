@@ -3,7 +3,7 @@ const steps = [
     number: "01",
     title: "You book online",
     description:
-      "Tell us the cemetery, loved one's name, and what you'd like done. Takes under 3 minutes.",
+      "Tell us the cemetery and section the burial is located, loved one's name, and what you'd like done. Takes under 3 minutes.",
   },
   {
     number: "02",
@@ -13,15 +13,9 @@ const steps = [
   },
   {
     number: "03",
-    title: "Careful attention",
-    description:
-      "We perform the agreed services with respect and precision.",
-  },
-  {
-    number: "04",
     title: "Photo confirmation",
     description:
-      "After each visit, we send before and after photos directly to you.",
+      "We send photos following the completion of the service.",
   },
 ];
 
