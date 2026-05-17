@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import sacredHeartLogo from "@/assets/sacred-heart.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
