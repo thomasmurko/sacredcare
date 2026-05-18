@@ -1,14 +1,17 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-cemetery.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Peaceful cemetery garden at sunrise"
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <video
+          src={heroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
