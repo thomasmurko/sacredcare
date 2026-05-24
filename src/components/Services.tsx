@@ -14,7 +14,7 @@ const services = [
   {
     icon: Heart,
     title: "Plot Maintenance",
-    description: "Comprehensive ground care including weeding, edging, and maintaining a tidy, respectful appearance year-round.",
+    description: "Ground care including weeding, and maintaining a tidy, respectful appearance year-round.",
   },
   {
     icon: Camera,
