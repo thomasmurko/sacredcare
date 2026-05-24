@@ -24,7 +24,7 @@ const services = [
   {
     icon: Calendar,
     title: "Scheduled Care Plans",
-    description: "Flexible care plans: one-time visits, seasonal maintenance, or year-round stewardship tailored to your needs.",
+    description: "Flexible care plans: one-time visits, seasonal maintenance, or year-round management tailored to your needs.",
   },
 ];
 
