@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import About from "@/components/About";
 import Process from "@/components/Process";
 import GetStarted from "@/components/GetStarted";
+import RegisterInterest from "@/components/RegisterInterest";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
         <About />
         <Process />
         <GetStarted />
+        <RegisterInterest />
       </main>
       <Footer />
     </div>
