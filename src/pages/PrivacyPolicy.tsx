@@ -118,10 +118,10 @@ const PrivacyPolicy = () => {
                 <p>
                   To exercise any of these rights, please contact us at{" "}
                   <a
-                    href="mailto:hello@sacredcare.au"
+                    href="mailto:thomas@brinvas.com"
                     className="text-primary hover:underline"
                   >
-                    hello@sacredcare.au
+                    thomas@brinvas.com
                   </a>
                   .
                 </p>
