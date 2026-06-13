@@ -2,12 +2,19 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import sacredHeartLogo from "@/assets/sacred-heart.png";
+import PreLaunchBanner from "@/components/PreLaunchBanner";
+
+const scrollToRegister = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  e.preventDefault();
+  document.getElementById("register")?.scrollIntoView({ behavior: "smooth" });
+};
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+      <PreLaunchBanner />
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -40,9 +47,9 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <a href="#contact">
+            <a href="#register" onClick={scrollToRegister}>
               <Button variant="hero" size="lg">
-                Request a Visit
+                Register your interest
               </Button>
             </a>
           </div>
@@ -73,9 +80,9 @@ const Header = () => {
               <a href="#contact" className="text-body hover:text-heading transition-colors py-2">
                 Contact
               </a>
-              <a href="#contact">
+              <a href="#register" onClick={scrollToRegister}>
                 <Button variant="hero" className="mt-4">
-                  Request a Visit
+                  Register your interest
                 </Button>
               </a>
             </div>

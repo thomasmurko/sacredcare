@@ -34,9 +34,9 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up-delay-3">
-            <a href="#contact">
+            <a href="#register" onClick={(e) => { e.preventDefault(); document.getElementById("register")?.scrollIntoView({ behavior: "smooth" }); }}>
               <Button variant="hero" size="xl">
-                Request a Visit
+                Register your interest
               </Button>
             </a>
             <a href="#services">
