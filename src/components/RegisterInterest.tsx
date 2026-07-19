@@ -35,6 +35,7 @@ const RegisterInterest = () => {
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const leadFiredRef = useRef(false);
 
   const toggleService = (s: string) =>
     setServices((prev) =>
