@@ -67,6 +67,16 @@ const RegisterInterest = () => {
       setError("Something went wrong. Please try again in a moment.");
       return;
     }
+
+    if (!leadFiredRef.current) {
+      leadFiredRef.current = true;
+      try {
+        window.fbq?.("track", "Lead");
+      } catch {
+        // Ad blockers / consent tools may block fbq; ignore silently.
+      }
+    }
+
     setSubmitted(true);
   };
 
