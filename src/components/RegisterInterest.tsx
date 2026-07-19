@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Check } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { z } from "zod";
+
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+  }
+}
 
 const SERVICE_OPTIONS = [
   "One-time clean & restore",
@@ -29,6 +35,7 @@ const RegisterInterest = () => {
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const leadFiredRef = useRef(false);
 
   const toggleService = (s: string) =>
     setServices((prev) =>
@@ -60,6 +67,16 @@ const RegisterInterest = () => {
       setError("Something went wrong. Please try again in a moment.");
       return;
     }
+
+    if (!leadFiredRef.current) {
+      leadFiredRef.current = true;
+      try {
+        window.fbq?.("track", "Lead");
+      } catch {
+        // Ad blockers / consent tools may block fbq; ignore silently.
+      }
+    }
+
     setSubmitted(true);
   };
 
