@@ -22,6 +22,7 @@ export type Database = {
           first_name: string
           id: string
           services: Json
+          user_id: string | null
         }
         Insert: {
           cemetery: string
@@ -30,6 +31,7 @@ export type Database = {
           first_name: string
           id?: string
           services?: Json
+          user_id?: string | null
         }
         Update: {
           cemetery?: string
@@ -38,6 +40,7 @@ export type Database = {
           first_name?: string
           id?: string
           services?: Json
+          user_id?: string | null
         }
         Relationships: []
       }
