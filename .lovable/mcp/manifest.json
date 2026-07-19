@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "sdk_version": "0.23.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "oauth",
+    "issuer": "https://qoivpignrgbmuujoragh.supabase.co/auth/v1",
+    "accepted_audiences": [
+      "authenticated"
+    ]
+  },
+  "mcp": {
+    "server": {
+      "name": "sacred-care-mcp",
+      "version": "0.1.0",
+      "title": "Sacred Care"
+    },
+    "tools": [
+      {
+        "name": "list_my_interest_registrations",
+        "title": "List my interest registrations",
+        "description": "List Sacred Care interest registrations submitted by the signed-in user.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "create_interest_registration",
+        "title": "Register interest",
+        "description": "Create a Sacred Care interest registration for the signed-in user. Use this when the caller asks to register interest in Sacred Care's burial care services.",
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "first_name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100,
+              "description": "First name of the person registering."
+            },
+            "cemetery": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200,
+              "description": "Cemetery where the loved one is resting."
+            },
+            "services": {
+              "description": "Optional list of services the caller is interested in (e.g. 'One-time clean & restore', 'Ongoing care visits').",
+              "maxItems": 20,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120
+              }
+            }
+          },
+          "required": [
+            "first_name",
+            "cemetery"
+          ]
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
