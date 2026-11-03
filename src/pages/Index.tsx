@@ -4,7 +4,6 @@ import OurWhy from "@/components/OurWhy";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Process from "@/components/Process";
-import GetStarted from "@/components/GetStarted";
 import RegisterInterest from "@/components/RegisterInterest";
 import Footer from "@/components/Footer";
 
@@ -18,7 +17,6 @@ const Index = () => {
         <Services />
         <About />
         <Process />
-        <GetStarted />
         <RegisterInterest />
       </main>
       <Footer />
