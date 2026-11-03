@@ -36,7 +36,7 @@ const Header = () => {
             <a href="#process" className="text-body hover:text-heading transition-colors text-sm font-medium">
               How It Works
             </a>
-            <a href="#contact" className="text-body hover:text-heading transition-colors text-sm font-medium">
+            <a href="#register" onClick={scrollToRegister} className="text-body hover:text-heading transition-colors text-sm font-medium">
               Contact
             </a>
           </nav>
@@ -73,7 +73,7 @@ const Header = () => {
               <a href="#process" className="text-body hover:text-heading transition-colors py-2">
                 How It Works
               </a>
-              <a href="#contact" className="text-body hover:text-heading transition-colors py-2">
+              <a href="#register" onClick={scrollToRegister} className="text-body hover:text-heading transition-colors py-2">
                 Contact
               </a>
               <a href="#register" onClick={scrollToRegister}>
