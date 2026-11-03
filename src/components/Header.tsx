@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import sacredHeartLogo from "@/assets/sacred-heart.png";
 import PreLaunchBanner from "@/components/PreLaunchBanner";
 
 const scrollToRegister = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -18,16 +17,13 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2.5">
-            <img
-              src={sacredHeartLogo}
-              alt="Sacred Care"
-              className="h-10 w-auto object-contain mix-blend-multiply"
-            />
-            <span className="font-serif text-2xl md:text-3xl font-medium text-heading tracking-tight">
-              Sacred Care
-            </span>
+          <a
+            href="/"
+            className="font-serif text-2xl md:text-3xl font-medium text-heading tracking-tight"
+          >
+            Sacred Care
           </a>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -40,7 +36,7 @@ const Header = () => {
             <a href="#process" className="text-body hover:text-heading transition-colors text-sm font-medium">
               How It Works
             </a>
-            <a href="#contact" className="text-body hover:text-heading transition-colors text-sm font-medium">
+            <a href="#register" onClick={scrollToRegister} className="text-body hover:text-heading transition-colors text-sm font-medium">
               Contact
             </a>
           </nav>
@@ -77,7 +73,7 @@ const Header = () => {
               <a href="#process" className="text-body hover:text-heading transition-colors py-2">
                 How It Works
               </a>
-              <a href="#contact" className="text-body hover:text-heading transition-colors py-2">
+              <a href="#register" onClick={scrollToRegister} className="text-body hover:text-heading transition-colors py-2">
                 Contact
               </a>
               <a href="#register" onClick={scrollToRegister}>
